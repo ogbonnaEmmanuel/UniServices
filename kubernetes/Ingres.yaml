@@ -15,13 +15,13 @@ spec:
             name: next-app-service
             port:
               number: 80
-      # - path: /service2
-      #   pathType: Prefix
-      #   backend:
-      #     service:
-      #       name: my-service-2
-      #       port:
-      #         number: 80
+      - path: /blueprint
+        pathType: Prefix
+        backend:
+          service:
+            name: go-sample-app-service
+            port:
+              number: 80
       # - path: /service3
       #   pathType: Prefix
       #   backend:
